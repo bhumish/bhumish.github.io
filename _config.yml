@@ -1,27 +1,27 @@
-title: Derrick Wells – Independent Product Designer
+title: Bhumish Gajjar
 logo:  # you can add own logo.
-description: Passionate designer curating designs for new startups  and  founders  and crafts  beautiful user interfaces with love.
-baseurl: "/derrick" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+description: Passionate security-engineer helping secure the digital world.
+baseurl: "/bhumish.github.io" # the subpath of your site, e.g. /blog
+url: "https://github.com/bhumish" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 # Author Settings
 author:
-  name: Derrick Wells
-  image: '/assets/img/01.jpg'
-  job: Independent Product Designer
-  bio: Passionate designer curating designs for new startups  and  founders  and crafts  beautiful user interfaces with love.
-  email: forexample@website.com
+  name: Bhumish Gajjar
+  image: '/assets/img/00.jpg'
+  job: Cyber Security Engineer
+  bio: Security Analyst with a passion in Application Security, Computer Networks and Log Analytics. Hobbies include cycling, soft trance music and learning about trains.
+  email: bhumishx@gmail.com
 
 
 # Contact links
 contact:
   - name: Twitter
-    link: https://twitter.com/
-  - name: Facebook
-    link: https://facebook.com/
+    link: https://twitter.com/bhumish
+  - name: Linkedin
+    link: https://linkedin.com/in/bhumish
   - name: Instagram
-    link: https://instagram.com/
+    link: https://instagram.com/bhumish
 
 
 # Comment Section (Disqus)
