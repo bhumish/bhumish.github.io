@@ -3,7 +3,7 @@ layout: post
 title:  Bugs — Easy To Find, Tough To Report
 date:   2020-01-26 14:01:35 +0300
 image:  '/assets/img/bugs-01.png'
-tags:   security, infosec
+tags:   security infosec
 ---
 
 A common complaint that you often hear in Infosec is how hard it can be to report vulnerabilities sometimes. This story tells of my journey using OSINT tools to find the right person to responsibly report a bug to. Of course, I enjoyed the journey more than the destination.
@@ -40,8 +40,12 @@ Tried searching for that company, found their website which proudly displayed th
 
 Quickly I gave a call to Alwin on that number, he picked up and I told him about the bug. He was totally unaware that such mis-configurations happen in S3. I explained him all the details – how I found the bug, what documents were exposed, what he needed to fix. He confirmed everything with his laptop in front of him, thanked me and said that he would reply to my mail. Next day the bucket stopped being leaky.
 
-I still haven’t received an email reply from Alvin though.
+*I still haven’t received an email reply from Alvin though.*
 
 The moral of the story is that the tools that we use in our daily life can be super helpful, we just need to tweak them according to our need.
 
 Also that bugs remain hard to report and ours can be a thankless job sometimes 🙂
+
+---
+
+The awesome image used in this article is called Firefly Hunter and was created by [Ben Girmann](https://dribbble.com/bgirmann).
