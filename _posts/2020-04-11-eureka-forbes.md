@@ -2,7 +2,7 @@
 layout: post
 title:  Your Eureka Forbes account can easily be hacked!
 date:   2020-04-11 14:01:35 +0300
-image:  eureka01.jpg
+image:  '/assets/img/eureka01.jpg'
 tags:   security, infosec
 ---
 
