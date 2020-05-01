@@ -3,7 +3,7 @@ layout: post
 title:  Your Eureka Forbes account can easily be hacked!
 date:   2020-04-11 14:01:35 +0300
 image:  '/assets/img/eureka01.jpg'
-tags:   security, infosec
+tags:   [security infosec]
 ---
 
 I am a customer of Eureka Forbes, and last year I was accessing their website for making a payment. I own an Aquaguard Water Purifier by them and wanted to pay for the yearly maintenance contract (AMC).
