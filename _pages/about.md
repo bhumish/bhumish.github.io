@@ -5,17 +5,39 @@ permalink: /about/
 image: '/assets/img/00.jpeg'
 ---
 
-Hi, my name is Bhumish Gajjar. I like spending my days in front of a computer screen, either learning something or implementing whatever I have learnt.
-Test text to add more.
+Hi! My name is Bhumish Gajjar and I am a Security Analyst with a passion in Application Security, Computer Networks and Log Analytics. Hobbies include cycling, soft trance music and learning about trains.
 
 
+----
 
-***
+### Contact me
 
-> Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution.
+[bhumish@live.com](mailto:bhumish@live.com), [bhumishx@gmail.com](mailto:bhumishx@gmail.com)
 
-***
+----
 
-Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products.
+### Achievements
 
-Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
+#### Reported a data-leak via misconfigured S3 AWS bucket for mFilterIt (April 2020)
+
+* Data contained more than 30GB of spreadsheets with millions of Indian customers’ email, phone numbers, address, phone-model, IMEI, etc.
+
+#### Reported a security vulnerability in the website of Eureka Forbes (Feb 2020)
+
+* The login functionality can be bypassed, which puts 20 million customers' data at risk. This issue is still present today without any communication or action by Eureka Forbes.
+
+#### Reported a data-leak via misconfigured S3 AWS bucket for Project-Lithium (Jan 2020)
+
+* The leaked data contained internal company documents as well as copies of Aadhaar cards, Driving licenses, Birth Certificates.
+
+#### Reported a data-leak via msiconfigured S3 AWS bucket for OYO-Rooms (Sept 2019)
+
+* Data contained confidentail company documents and third-party agreements, plus some employees' personal data.
+
+#### Reported security bugs in the website of a national restaurant chain, managed by UrbanPiper (Dec 2018)
+
+* Multiple security issues related to login, session and user data enumeration
+
+#### Reported a security vulnerability in the website & mobile apps for a global restaurant chain (Oct 2018)
+
+* This was a vulnerability related to session management and data validation, which allowed to enter into any user's account.
