@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-image: '/assets/img/00.jpeg'
+image: '/assets/img/000.jpg'
 ---
 
 Hi! My name is Bhumish Gajjar and I am a Security Analyst with a passion in Application Security, Computer Networks and Log Analytics. Hobbies include cycling, soft trance music and learning about trains.
