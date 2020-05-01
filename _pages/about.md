@@ -2,12 +2,13 @@
 layout: page
 title: About
 permalink: /about/
-image: '/assets/img/01.jpg'
+image: '/assets/img/00.jpeg'
 ---
 
-Hi, my name is Derrick Wells. I like being at the center of events, being free and enjoying every moment. Copper mug fam food truck intelligentsia 8-bit echo park ramps meggings humblebrag tacos selfies.
+Hi, my name is Bhumish Gajjar. I like spending my days in front of a computer screen, either learning something or implementing whatever I have learnt.
+Test text to add more.
 
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity.
+
 
 ***
 
