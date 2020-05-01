@@ -2,7 +2,7 @@
 layout: post
 title:  Your Eureka Forbes account can easily be hacked!
 date:   2020-04-11 14:01:35 +0300
-image:  
+image:  eureka01.jpg
 tags:   security, infosec
 ---
 
@@ -28,8 +28,13 @@ Not just view, I can also edit the customers details. Just a scenario – I am o
 
 As soon as I observed this flaw, I tried to inform Eureka Forbes regarding this issue. The initial point-of-contact (customer care – 18602661177) was useless – the Executive never connected me to someone technical. Next was to contact them over email – on Jan 17, I sent an email to *deepa.customercare@eurekaforbes.com*, *customerservice@eurekaforbes.com* (email-ids observed on their website) and *shailendrakulkarni@eurekaforbes.com*, *suchetadadarkar@eurekaforbes.com* (on LinkedIn, both have listed their jobs as IT Managers at Eureka Forbes). I did not get a reply. Found a Regional Head over LinkedIn and messaged her, but she didn’t reply.
 
-Later I got information that Quinnox (www.quinnox.com) was the one who manages the IT and Websites for Eureka Forbes. Tried contacting one of their employee over LinkedIn, asking him to connect me with someone who can look into this — never got a reply.
+Later I got information that Quinnox ([www.quinnox.com](https://www.quinnox.com)) was the one who manages the IT and Websites for Eureka Forbes. Tried contacting one of their employee over LinkedIn, asking him to connect me with someone who can look into this — never got a reply.
 
 My last option was to contact CERT-IN (the Indian Gov’s Computer Emergency Response Team) for this issue. I provided all the technical details (HTTP Traffic, steps to reproduce) over email on 25 Feb 2020. Earlier they were not able to reproduce the issue at their side, so I provided screenshots and more details in the subsequent communications. That day I got many OTPs trying to login to my account – I guessed someone at CERT-IN was trying to test the issue (in the steps and screenshots I had provided my phone number, so they might have tested using my number). I tried to check if they were able to test this and again a follow-up mail after a week, but they never replied.
 
 The issue is still **OPEN** on the website (today, 11 April 2020). Anybody can login to someone’s Eureka Forbes account by just knowing their phone number. If you know someone who works at Eureka Forbes or Quinnox, please ask them to contact me at bhumish[at]live[dot]com.
+
+---
+
+The photo used on this page is by [Viajero](https://www.pexels.com/@viajero)
+
