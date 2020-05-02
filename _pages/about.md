@@ -23,7 +23,7 @@ Hi! My name is Bhumish Gajjar and I am a Security Analyst with a passion in Appl
 
 * The leaked data contained internal company documents as well as copies of Aadhaar cards, Driving licenses, Birth Certificates.
 
-#### Reported a data-leak via msiconfigured S3 AWS bucket for OYO-Rooms (Sept 2019)
+#### Reported a data-leak via msiconfigured S3 AWS bucket for OYO-Rooms, received a Certificate of Appreciation (Sept 2019)
 
 * Data contained confidentail company documents and third-party agreements, plus some employees' personal data.
 
@@ -34,3 +34,7 @@ Hi! My name is Bhumish Gajjar and I am a Security Analyst with a passion in Appl
 #### Reported a security vulnerability in the website & mobile apps for a global restaurant chain (Oct 2018)
 
 * This was a vulnerability related to session management and data validation, which allowed to enter into any user's account.
+
+#### Received a Certificate of Appreciation from Jio - CISO for helping secure the payment and media applications (Aug 2018)
+
+#### Received a Certificate of Appreciation from Jio - CISO for developing and managing the internal knowledge portal and integrating different devices with SIEM (Aug 2016)
