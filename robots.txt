@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bhumish.github.io/sitemap.xml
