@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on Bhumish&#39;s Blog :tada:</title>
+    <link>https://bhumish.github.io/tags/security/</link>
+    <description>Recent content in security on Bhumish&#39;s Blog :tada:</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>&amp;copy; 2022 Bhumish Gajjar</copyright>
+    <lastBuildDate>Tue, 06 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building an Effective Vulnerability Management Program</title>
+      <link>https://bhumish.github.io/post/vulnerability-management-program/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/vulnerability-management-program/</guid>
+      <description>Unleashing the Risk Based Vulnerability Management, a security update to your traditional VM Process</description>
+    </item>
+    
+    <item>
+      <title>Security Considerations for Smart Cameras</title>
+      <link>https://bhumish.github.io/post/smart-camera-security-considerations/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/smart-camera-security-considerations/</guid>
+      <description>Designing smart-iot cameras? Read this to check out the security perpective</description>
+    </item>
+    
+    <item>
+      <title>Bugs — Easy To Find, Tough To Report</title>
+      <link>https://bhumish.github.io/post/bugs-easy-to-find/</link>
+      <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/bugs-easy-to-find/</guid>
+      <description>Describing one scenario, showing how tough it is to report a bug when the company doesn&amp;rsquo;t have a VDP</description>
+    </item>
+    
+    <item>
+      <title>Bypass Root detection in Android - by modifying the APK</title>
+      <link>https://bhumish.github.io/post/bypass-root-detection-android/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/bypass-root-detection-android/</guid>
+      <description>A trick on how to bypass the root-detection mechanism applied by any Android APK</description>
+    </item>
+    
+  </channel>
+</rss>

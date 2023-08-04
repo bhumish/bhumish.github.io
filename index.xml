@@ -6,7 +6,17 @@
     <description>Recent content in Welcome to my blog! :tada: on Bhumish&#39;s Blog :tada:</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
-    <copyright>&amp;copy; 2022 Bhumish Gajjar</copyright><atom:link href="https://bhumish.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; 2022 Bhumish Gajjar</copyright>
+    <lastBuildDate>Sun, 02 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MFA - Why do we match numbers to approve MFA sign-in?</title>
+      <link>https://bhumish.github.io/post/number-match-mfa/</link>
+      <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/number-match-mfa/</guid>
+      <description>In our MFA Authenticator apps, now we need to enter numbers shown during login - why did the vendors enforce this? To stop MFA bombarding attacks.</description>
+    </item>
+    
     <item>
       <title>About Me</title>
       <link>https://bhumish.github.io/about-me/</link>
@@ -16,6 +26,51 @@
       <description>This is my personal journal where I write articles about Information Security. I enjoy the world of Security - be it related to software or hardware or cloud. I have been a part of this domain since almost 12 years, where I started the official journey with getting a Master&amp;rsquo;s degree in Network Security, and then started working professionally with various organizations. I have worked in many fields of security, including Vulnerability Management, Application Security, Security Analystics, Threat Hunting, Forensics, Penetration Testing, Auditing.
 Currently working as a Senior Pentester, finding security issues in Cloud, Web and Mobile applications.
 For any feedback or comments regarding my blog, you can connect with me on my email: bhumish[@]live[.]com</description>
+    </item>
+    
+    <item>
+      <title>Building an Effective Vulnerability Management Program</title>
+      <link>https://bhumish.github.io/post/vulnerability-management-program/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/vulnerability-management-program/</guid>
+      <description>Unleashing the Risk Based Vulnerability Management, a security update to your traditional VM Process</description>
+    </item>
+    
+    <item>
+      <title>Security Considerations for Smart Cameras</title>
+      <link>https://bhumish.github.io/post/smart-camera-security-considerations/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/smart-camera-security-considerations/</guid>
+      <description>Designing smart-iot cameras? Read this to check out the security perpective</description>
+    </item>
+    
+    <item>
+      <title>An Innovative Email Verification Technique for Spam</title>
+      <link>https://bhumish.github.io/post/email-verification-spam/</link>
+      <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/email-verification-spam/</guid>
+      <description>Received a spam mail. Dissected the links to find something new!</description>
+    </item>
+    
+    <item>
+      <title>Bugs — Easy To Find, Tough To Report</title>
+      <link>https://bhumish.github.io/post/bugs-easy-to-find/</link>
+      <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/bugs-easy-to-find/</guid>
+      <description>Describing one scenario, showing how tough it is to report a bug when the company doesn&amp;rsquo;t have a VDP</description>
+    </item>
+    
+    <item>
+      <title>Bypass Root detection in Android - by modifying the APK</title>
+      <link>https://bhumish.github.io/post/bypass-root-detection-android/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/bypass-root-detection-android/</guid>
+      <description>A trick on how to bypass the root-detection mechanism applied by any Android APK</description>
     </item>
     
   </channel>

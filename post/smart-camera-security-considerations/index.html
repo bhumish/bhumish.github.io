@@ -1,0 +1,693 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html
+  lang="en-AU"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="false"
+><head>
+  <meta charset="utf-8" />
+  
+    <meta http-equiv="content-language" content="en-au" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="rgb(255,255,255)" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Security Considerations for Smart Cameras &middot; Bhumish&#39;s Blog 🎉</title>
+    <meta name="title" content="Security Considerations for Smart Cameras &middot; Bhumish&#39;s Blog 🎉" />
+  
+  <meta name="description" content="Designing smart-iot cameras? Read this to check out the security perpective" />
+  
+  
+  
+  <link rel="canonical" href="https://bhumish.github.io/post/smart-camera-security-considerations/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.25d341a2871e5f761d78620fbdb676a4a1fb2a7fa53b33fb570092cb62a472c0.css"
+    integrity="sha256-JdNBooceX3YdeGIPvbZ2pKH7Kn&#43;lOzP7VwCSy2KkcsA="
+  />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.022d0ebc3b46a335eb1c7ef79b7f2de143d7cd5156d433638592ef1ce5f8554e.js" integrity="sha256-Ai0OvDtGozXrHH73m38t4UPXzVFW1DNjhZLvHOX4VU4="></script>
+  
+    
+    
+    
+  
+  
+    
+    
+  
+  
+  
+    
+    <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.75206d23ef83f4908b2bdd2317bf6ddff399e9173a16fff5451c40b8e857cfa8.js" integrity="sha256-dSBtI&#43;&#43;D9JCLK90jF79t3/OZ6Rc6Fv/1RRxAuOhXz6g=" data-copy="Copy" data-copied="Copied"></script>
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Security Considerations for Smart Cameras" />
+<meta property="og:description" content="Designing smart-iot cameras? Read this to check out the security perpective" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bhumish.github.io/post/smart-camera-security-considerations/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-06-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-06-30T00:00:00+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Security Considerations for Smart Cameras"/>
+<meta name="twitter:description" content="Designing smart-iot cameras? Read this to check out the security perpective"/>
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Security Considerations for Smart Cameras",
+    "headline": "Security Considerations for Smart Cameras",
+    
+    "abstract": "Designing smart-iot cameras? Read this to check out the security perpective",
+    "inLanguage": "en-au",
+    "url" : "https:\/\/bhumish.github.io\/post\/smart-camera-security-considerations\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Bhumish Gajjar"
+    },
+    "copyrightYear": "2021",
+    "dateCreated": "2021-06-30T00:00:00\u002b00:00",
+    "datePublished": "2021-06-30T00:00:00\u002b00:00",
+    
+    "dateModified": "2021-06-30T00:00:00\u002b00:00",
+    
+    "keywords": ["security","smart camera","iot security"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1771"
+  }]
+  </script>
+
+
+  
+  <meta name="author" content="Bhumish Gajjar" />
+  
+    
+      <link href="mailto:bhumish@live.com" rel="me" />
+    
+      <link href="https://linkedin.com/in/bhumish" rel="me" />
+    
+      <link href="https://twitter.com/bhumish" rel="me" />
+    
+      <link href="https://medium.com/@bhumish" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+  
+  
+</head>
+<body
+    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="font-bold pe-2 text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral print:hidden sm:py-10">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Bhumish&rsquo;s Blog 🎉</a
+  >
+
+      
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col ltr:text-right rtl:text-left sm:flex-row">
+        
+          
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/post/"
+                  title="Posts"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Articles</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/about-me/"
+                  title="About Me"
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >About Me</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
+              <button id="search-button-m0" title="Search (/)">
+                <span
+                  class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
+                >
+                  <span class="relative inline-block align-text-bottom px-1 icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+                </span>
+              </button>
+            </li>
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/"
+      >Welcome to my blog! :tada:</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline ">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/post/"
+      >Posts</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/post/smart-camera-security-considerations/"
+      >Security Considerations for Smart Cameras</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Security Considerations for Smart Cameras
+      </h1>
+      <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2021-06-30 00:00:00 &#43;0000 UTC">30 June 2021</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">9 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+      </div>
+      
+    </header>
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      <div class="min-w-0 min-h-0 max-w-prose grow">
+        <p><strong>In this world of inter-connected devices, it is customary to see smart cameras everywhere; they have become ubiquitous in this modern era. In the past decade, the camera industry has seen a revolution in innovation, technology, and usage, with Gartner projecting that there will be around 15M connected cameras by 2023.</strong></p>
+<p>With the evolution of the cameras, attackers have also become more skilled and better equipped. We are seeing many attacks on camera infrastructure where the attackers exploit various loopholes in the system. Recently, there was an attack on a security startup where the attackers breached data of nearly 150,000 cameras and were able to view camera feeds from jails, hospitals, schools, and offices. Earlier this year, cloud-connected cameras of more than 200 individuals were hacked, and the hacker had access to over four years of footage that was backed up online). Some years back, there was an incident where hackers had breached the security cameras of a casino and made millions by gaining an advantage in the high-stake games.</p>
+<p>It has become imperative to secure every component in the smart camera ecosystem, as <strong>security is as strong as the weakest link</strong>. Even if a single element in the architecture possesses a vulnerability, it can compromise the whole system.</p>
+<p>This article explains the different attack vectors and security considerations to follow while securing your camera’s ecosystem.</p>
+<h2 id="architecture" class="relative group">Architecture <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#architecture" aria-label="Anchor">#</a></span></h2>
+<p>Let us consider the architecture of smart cameras installed in a home. It would have wired or wireless cameras connected to a gateway, which would subsequently connect to the Internet, where it would also accept communication from the developer’s server. A user can access these cameras using their phone’s custom-built app to manage the cameras in two modes – (a) by connecting to the gateway via Wi-Fi, or (b) by connecting over the Internet and getting routed to their camera.</p>
+<p>Here is a typical architecture with different components of the smart camera ecosystem.</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      <img
+        class="mx-auto my-0 rounded-md"
+        
+          
+            srcset="/img/iot-camera/smartcamera1_hu89cc8ae28ec794cbddcdf88dd2936d2c_104683_330x0_resize_box_3.png 330w,/img/iot-camera/smartcamera1_hu89cc8ae28ec794cbddcdf88dd2936d2c_104683_660x0_resize_box_3.png 660w,/img/iot-camera/smartcamera1_hu89cc8ae28ec794cbddcdf88dd2936d2c_104683_1024x0_resize_box_3.png 1024w,/img/iot-camera/smartcamera1_hu89cc8ae28ec794cbddcdf88dd2936d2c_104683_1320x0_resize_box_3.png 2x"
+            src="/img/iot-camera/smartcamera1_hu89cc8ae28ec794cbddcdf88dd2936d2c_104683_660x0_resize_box_3.png"
+          
+        
+        alt="architecture"
+        
+          loading="lazy"
+        
+      />
+      
+    </figure>
+  
+
+</p>
+<p>All these components, regardless of whether ownership lies with the user, the camera company, or the public, could possess vulnerabilities. Eight different components are tagged in the architecture diagram indicating points of vulnerability.</p>
+<h3 id="1-gateway" class="relative group">1. Gateway <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#1-gateway" aria-label="Anchor">#</a></span></h3>
+<p>As the central controller in this setup, the gateway would be responsible for almost all the configurations, management, access, authorization, maintenance, and update. Hence it becomes significant to secure this component. Also, the attack surface is from both sides – public Internet as well as an internal network. Firmware is exploited in such an attack, and there is continuous research to find ways and means for gateway and router exploitation.</p>
+<p>A study of nearly 100 home routers last year revealed that almost all of them had severe unpatched security flaws. Similar is the case with home gateways - varying functionalities but same techniques. The attacker can control all the smart endpoints connected to a particular gateway by attacking routers or gateways.</p>
+<p>Ensuring that the firmware undergoes a periodic and ad-hoc security audit by internal and third-party teams is one way to protect yourself from such an attack. Any security issues reported should be fixed on high priority, and the updated firmware needs to be provided to the users at the earliest. It then becomes the users&rsquo; responsibility to keep their gateway device updated with the latest version of the firmware.</p>
+<p>The main areas you should consider focusing on, from a security perspective, are:</p>
+<ul>
+<li>Authentication and authorization mechanism for accessing the gateway and its different modules</li>
+<li>Secure and encrypted communications between various internal and external components</li>
+<li>Coding practices to keep the code free from any security issues</li>
+<li>Proper handling of input, errors, and exceptions</li>
+<li>Robust cryptographic algorithms for encryption</li>
+<li>Secure storage of sensitive information</li>
+</ul>
+<h3 id="2-connection-from-the-mobile-device-to-the-gateway" class="relative group">2. Connection from the Mobile device to the gateway <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#2-connection-from-the-mobile-device-to-the-gateway" aria-label="Anchor">#</a></span></h3>
+<p>All the internal components present in a typical home would be connected via Wi-Fi signals. This mobile device would be connected to the gateway mainly to manage the cameras. When the mobile device accesses this environment using public internet touchpoints, there would be more authentication mechanisms and security controls – compared to a device connected via local Wi-Fi network. However, it is always better to have the same level of security for the internal network too.</p>
+<p>Some of the attack scenarios and security considerations for this case are:</p>
+<ul>
+<li>A guest or a neighbor can try to get access to the gateway or cameras. Hence even if it is on a local network, there should be at least one level of authentication. This would also protect against any rogue or compromised devices in the same network</li>
+<li>The SSIDs should not be the default and should be hidden for all connected devices, reducing the attack surface of a brute-force attack</li>
+<li>Guest accounts should be disabled for the Wi-Fi network or gateway</li>
+<li>Wi-Fi should be secured using a robust WPA2 key</li>
+<li>Wi-Fi network should be secure against protocol-level attacks like KRACK</li>
+</ul>
+<h3 id="3-the-connection-between-the-camera-and-the-gateway" class="relative group">3. The connection between the camera and the gateway <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#3-the-connection-between-the-camera-and-the-gateway" aria-label="Anchor">#</a></span></h3>
+<p>These are the two core nodes in the architecture – and their communication is important as, without this, they serve no purpose. The transmission can be wired or wireless.</p>
+<p>Several security considerations need to be taken care of to ensure the overall security of this communication. The most basic is the availability of the network – the protocol should be such that it can handle the DoS attacks – which a hacker can trigger in an authenticated or unauthenticated manner. Next comes the MITM (Man-in-the-middle) attack in which an attacker can sit in between the two nodes and sniff or modify all the traffic – this endangers the confidentiality of the traffic. Enforcing proper encryption can mitigate such attacks.</p>
+<h3 id="4-camera" class="relative group">4. Camera <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#4-camera" aria-label="Anchor">#</a></span></h3>
+<p>The camera device is the heart of this ecosystem. Securing the camera’s internal functions and data flow becomes the primary goal to reduce the overall risk, while the next step is to secure the camera’s firmware.</p>
+<p>There have been many attacks wherein weak firmware security allowed the attackers to take control of the camera. Earlier, it was not easy to fetch the firmware and analyze it, but recently, several resources have become easily accessible, making this process easy and quick.</p>
+<p>The firmware should undergo rigorous auditing to check for any security bugs – in the code, data flow, various logics, and even the configurations. Most of the security issues observed recently are related to authentication – thus, it is mandatory to change the default credentials and remove any hardcoded passwords. It would also provide additional security to enable multi-factor authentication.</p>
+<h3 id="5-the-connection-between-gateway-and-cloud-server" class="relative group">5. The connection between Gateway and Cloud server <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#5-the-connection-between-gateway-and-cloud-server" aria-label="Anchor">#</a></span></h3>
+<p>Typically, this connection would be between the cloud environment of the developer and the home-based gateway device using the public Internet. Since it is traveling through the public network, there is a high probability of attackers lurking to attack the communications. The primary security considerations for this scenario should be:</p>
+<ul>
+<li>Gateway checking the authenticity of the cloud server</li>
+<li>Cloud server checking the authenticity of the gateway device</li>
+<li>Integrity of transmitted data remaining intact during communications</li>
+<li>This communication should not be eavesdropped on, where proper cryptographic algorithms are in place to encrypt all the data</li>
+<li>Privacy of the user data coming through gateway should not be compromised – only the required data to is be shared to cloud server and in a very secure manner</li>
+</ul>
+<h3 id="6-cloud-server" class="relative group">6. Cloud server <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#6-cloud-server" aria-label="Anchor">#</a></span></h3>
+<p>The cloud server, in this instance, refers to the developer or company-managed server located in the cloud. This server could consist of many machines used for different purposes such as live streaming, video storage, user authentication, firmware upgrade, user configuration, web application, backend programs, logging.</p>
+<p>A security team should first audit the cloud environment, and establish boundaries on who will manage the security of which component – the hosting provider or the cloud server owner. The next step is to check for any misconfiguration, followed by checking for efficient access control.</p>
+<p>The security considerations are as below:</p>
+<ul>
+<li>Implement proper authentication, which should consist of multi-factor authentication</li>
+<li>Establish access control mechanisms with a proper IAM plan</li>
+<li>Encryption of data at rest (storage) and data in transit (network)</li>
+<li>Continuous security monitoring of all the assets and a tight and updated vulnerability management process to keep all the systems secure</li>
+<li>All the assets should be compliant with relative standards and certifications</li>
+</ul>
+<h3 id="7-the-connection-between-the-mobile-device-and-the-cloud-server" class="relative group">7. The connection between the Mobile device and the Cloud server <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#7-the-connection-between-the-mobile-device-and-the-cloud-server" aria-label="Anchor">#</a></span></h3>
+<p>A valid user can manage and access his or her cameras from any point of the world using the Internet. This is made possible via the cloud server, which connects to the gateway to provide exact access to a user’s resources. For the cloud server, it becomes significant to identify and provide the perfect access type to each user. Here are the security considerations and attack scenarios helpful in this case:</p>
+<ul>
+<li>Authentication becomes the main pain-point here – a strong authentication system should be in place to allow only valid users. There should be arrangements to mitigate any authentication related attacks by using rate-limiting and multi-factor authentication.</li>
+<li>Authorization comes next, which checks that a valid user has access only to the allowed resources. This should also cover privilege escalation, where an attacker can escalate his rights to gain higher privileges and perform activities that are usually not permitted.</li>
+<li>Trust between the mobile application and cloud server should be adequately established so that both parties know and trust each other. This can be achieved using SSL pinning.</li>
+<li>Encryption of traffic between the two parties should be mandatory.</li>
+</ul>
+<h3 id="8-mobile-application" class="relative group">8. Mobile application <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#8-mobile-application" aria-label="Anchor">#</a></span></h3>
+<p>The security considerations for mobile applications are also applicable to other platforms used to manage and control the camera. Typically, this would be the application used for various purposes, such as controlling the camera, watching live streams, managing users, recording, and so on.</p>
+<p>There can be different attack scenarios in this case:</p>
+<ul>
+<li>Other application(s) on the device being able to read the password or other sensitive data on the user’s camera application</li>
+<li>The attacker being able to bypass authentication on the application if he/she has physical access</li>
+<li>On the same network, a third party being able to read the communication</li>
+<li>A third party being able to reverse engineer the application to read data</li>
+<li>An authenticated user being able to tamper with the code to enable or disable features not intended for that particular user</li>
+</ul>
+<p>You should properly audit the mobile application to find any such security or privacy loopholes and mitigate all the risks within a defined timeframe. Since the code resides on the client’s phone, a user can decrypt it to read the actual code – hence it should be obfuscated. This testing should be done in accordance with OWASP Mobile Testing Guide.</p>
+
+      </div>
+    </section>
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  <div class="flex">
+    
+      
+      
+        
+        <img
+          class="!mb-0 !mt-0 me-4 h-24 w-24 rounded-full"
+          width="96"
+          height="96"
+          alt="Bhumish Gajjar"
+          src="/img/author_hu026534b9bf09a70d25e16607879320d8_306924_192x192_fill_q75_box_center.jpg"
+          
+            loading="lazy"
+          
+        />
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          Author
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          Bhumish Gajjar
+        </div>
+      
+      
+        <div class="text-sm text-neutral-700 dark:text-neutral-400">Information Security enthusiast, works in AppSec, VA-PT, Threat Hunting, Cloud Security and Vulnerability Management</div>
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="mailto:bhumish@live.com"
+          target="_blank"
+          aria-label="Email"
+          rel="me noopener noreferrer"
+          ><span class="relative inline-block align-text-bottom px-1 icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://linkedin.com/in/bhumish"
+          target="_blank"
+          aria-label="Linkedin"
+          rel="me noopener noreferrer"
+          ><span class="relative inline-block align-text-bottom px-1 icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://twitter.com/bhumish"
+          target="_blank"
+          aria-label="Twitter"
+          rel="me noopener noreferrer"
+          ><span class="relative inline-block align-text-bottom px-1 icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://medium.com/@bhumish"
+          target="_blank"
+          aria-label="Medium"
+          rel="me noopener noreferrer"
+          ><span class="relative inline-block align-text-bottom px-1 icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/></svg>
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="/post/email-verification-spam/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >An Innovative Email Verification Technique for Spam</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2020-07-08 00:00:00 &#43;0000 UTC">8 July 2020</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="/post/vulnerability-management-program/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Building an Effective Vulnerability Management Program</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2021-07-06 00:00:00 &#43;0000 UTC">6 July 2021</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+        
+          <div class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12">
+            <a
+              href="#the-top"
+              class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+              aria-label="Scroll to top"
+              title="Scroll to top"
+            >
+              &uarr;
+            </a>
+          </div>
+        
+      </main><footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            © 2022 Bhumish Gajjar
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://git.io/hugo-congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    
+    
+      <div
+        class="me-14 cursor-pointer text-sm text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+      >
+        <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
+          <div
+            class="flex h-12 w-12 items-center justify-center dark:hidden"
+            title="Switch to dark appearance"
+          >
+            <span class="relative inline-block align-text-bottom px-1 icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+          </div>
+          <div
+            class="hidden h-12 w-12 items-center justify-center dark:flex"
+            title="Switch to light appearance"
+          >
+            <span class="relative inline-block align-text-bottom px-1 icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+          </div>
+        </button>
+      </div>
+    
+  </div>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="https://bhumish.github.io/"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          <span class="relative inline-block align-text-bottom px-1 icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+</span>
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        <span class="relative inline-block align-text-bottom px-1 icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+</span>
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+    </div>
+  </body>
+</html>

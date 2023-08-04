@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>phishing on Bhumish&#39;s Blog :tada:</title>
+    <link>https://bhumish.github.io/tags/phishing/</link>
+    <description>Recent content in phishing on Bhumish&#39;s Blog :tada:</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>&amp;copy; 2022 Bhumish Gajjar</copyright>
+    <lastBuildDate>Sun, 02 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/phishing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MFA - Why do we match numbers to approve MFA sign-in?</title>
+      <link>https://bhumish.github.io/post/number-match-mfa/</link>
+      <pubDate>Sun, 02 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/number-match-mfa/</guid>
+      <description>In our MFA Authenticator apps, now we need to enter numbers shown during login - why did the vendors enforce this? To stop MFA bombarding attacks.</description>
+    </item>
+    
+    <item>
+      <title>An Innovative Email Verification Technique for Spam</title>
+      <link>https://bhumish.github.io/post/email-verification-spam/</link>
+      <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/email-verification-spam/</guid>
+      <description>Received a spam mail. Dissected the links to find something new!</description>
+    </item>
+    
+  </channel>
+</rss>
