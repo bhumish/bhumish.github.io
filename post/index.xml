@@ -116,5 +116,95 @@
       <description>Bill Payment portal for BSNL landlines is exposing the phone-owner&amp;rsquo;s details without any verification. These quick lines explain how.</description>
     </item>
     
+    <item>
+      <title>Python based Phonebook Course on Codecademy</title>
+      <link>https://bhumish.github.io/post/phonebook-codeacademy/</link>
+      <pubDate>Mon, 25 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/phonebook-codeacademy/</guid>
+      <description>Announcement on my new Python based interactive course</description>
+    </item>
+    
+    <item>
+      <title>What is Phone-DNS and Why we can’t implement it now</title>
+      <link>https://bhumish.github.io/post/phone-dns/</link>
+      <pubDate>Fri, 15 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/phone-dns/</guid>
+      <description>An idea on mapping the phone numbers with meaningful-memorable shortcodes, similar to the DNS system</description>
+    </item>
+    
+    <item>
+      <title>File Upload flaw in Wordpress</title>
+      <link>https://bhumish.github.io/post/wordpress-file-hosting/</link>
+      <pubDate>Sat, 19 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/wordpress-file-hosting/</guid>
+      <description>Found a flaw in Wordpress hosting where users can upload any kind of file - bypassing the mechanism to allow only white-listed file types</description>
+    </item>
+    
+    <item>
+      <title>And one more hashing utility!</title>
+      <link>https://bhumish.github.io/post/hashing-py/</link>
+      <pubDate>Mon, 14 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/hashing-py/</guid>
+      <description>Created a tiny Python script for Hashing</description>
+    </item>
+    
+    <item>
+      <title>Common problems during initial Honeyd configuration</title>
+      <link>https://bhumish.github.io/post/honeyd-issues/</link>
+      <pubDate>Sat, 12 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/honeyd-issues/</guid>
+      <description>I faced and resolved some issues while working with HoneyD honeypot. This involved a lot of research on the interwebz, as this used to be a very niche utility.</description>
+    </item>
+    
+    <item>
+      <title>A free gift with the dynamic IP</title>
+      <link>https://bhumish.github.io/post/dynamic-ip/</link>
+      <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/dynamic-ip/</guid>
+      <description>I used to have dynamic IP assigned by the ISP - and I faced a problem which was like a gift bundled with my IP address.</description>
+    </item>
+    
+    <item>
+      <title>Simplyhash Python Utility</title>
+      <link>https://bhumish.github.io/post/simplyhash-py/</link>
+      <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/simplyhash-py/</guid>
+      <description>A tiny Python script for Hashing</description>
+    </item>
+    
+    <item>
+      <title>Phishtank - the conventional tank of phishes</title>
+      <link>https://bhumish.github.io/post/phishtank/</link>
+      <pubDate>Thu, 19 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/phishtank/</guid>
+      <description>The conventional tank of ph(f)ishes</description>
+    </item>
+    
+    <item>
+      <title>A device for scents?</title>
+      <link>https://bhumish.github.io/post/scent-device/</link>
+      <pubDate>Sat, 31 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/scent-device/</guid>
+      <description>When are you making one?</description>
+    </item>
+    
+    <item>
+      <title>A Python exercise on Codecademy</title>
+      <link>https://bhumish.github.io/post/python-codeacademy/</link>
+      <pubDate>Fri, 16 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/python-codeacademy/</guid>
+      <description>Announcement on my new Python based interactive course - Rock Paper Scissors</description>
+    </item>
+    
   </channel>
 </rss>

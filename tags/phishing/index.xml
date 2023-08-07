@@ -26,5 +26,14 @@
       <description>Received a spam mail. Dissected the links to find something new!</description>
     </item>
     
+    <item>
+      <title>Phishtank - the conventional tank of phishes</title>
+      <link>https://bhumish.github.io/post/phishtank/</link>
+      <pubDate>Thu, 19 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/phishtank/</guid>
+      <description>The conventional tank of ph(f)ishes</description>
+    </item>
+    
   </channel>
 </rss>

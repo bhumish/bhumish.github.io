@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wordpress on Bhumish&#39;s Blog :tada:</title>
+    <link>https://bhumish.github.io/tags/wordpress/</link>
+    <description>Recent content in Wordpress on Bhumish&#39;s Blog :tada:</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>&amp;copy; 2023 Bhumish Gajjar</copyright>
+    <lastBuildDate>Sat, 19 Oct 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>File Upload flaw in Wordpress</title>
+      <link>https://bhumish.github.io/post/wordpress-file-hosting/</link>
+      <pubDate>Sat, 19 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/wordpress-file-hosting/</guid>
+      <description>Found a flaw in Wordpress hosting where users can upload any kind of file - bypassing the mechanism to allow only white-listed file types</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Bhumish&#39;s Blog :tada:</title>
+    <link>https://bhumish.github.io/tags/python/</link>
+    <description>Recent content in Python on Bhumish&#39;s Blog :tada:</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>&amp;copy; 2023 Bhumish Gajjar</copyright>
+    <lastBuildDate>Mon, 25 Nov 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python based Phonebook Course on Codecademy</title>
+      <link>https://bhumish.github.io/post/phonebook-codeacademy/</link>
+      <pubDate>Mon, 25 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/phonebook-codeacademy/</guid>
+      <description>Announcement on my new Python based interactive course</description>
+    </item>
+    
+    <item>
+      <title>And one more hashing utility!</title>
+      <link>https://bhumish.github.io/post/hashing-py/</link>
+      <pubDate>Mon, 14 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/hashing-py/</guid>
+      <description>Created a tiny Python script for Hashing</description>
+    </item>
+    
+    <item>
+      <title>Simplyhash Python Utility</title>
+      <link>https://bhumish.github.io/post/simplyhash-py/</link>
+      <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/simplyhash-py/</guid>
+      <description>A tiny Python script for Hashing</description>
+    </item>
+    
+    <item>
+      <title>A Python exercise on Codecademy</title>
+      <link>https://bhumish.github.io/post/python-codeacademy/</link>
+      <pubDate>Fri, 16 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/python-codeacademy/</guid>
+      <description>Announcement on my new Python based interactive course - Rock Paper Scissors</description>
+    </item>
+    
+  </channel>
+</rss>

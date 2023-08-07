@@ -17,5 +17,23 @@
       <description>Received a spam mail. Dissected the links to find something new!</description>
     </item>
     
+    <item>
+      <title>A free gift with the dynamic IP</title>
+      <link>https://bhumish.github.io/post/dynamic-ip/</link>
+      <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/dynamic-ip/</guid>
+      <description>I used to have dynamic IP assigned by the ISP - and I faced a problem which was like a gift bundled with my IP address.</description>
+    </item>
+    
+    <item>
+      <title>Phishtank - the conventional tank of phishes</title>
+      <link>https://bhumish.github.io/post/phishtank/</link>
+      <pubDate>Thu, 19 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/phishtank/</guid>
+      <description>The conventional tank of ph(f)ishes</description>
+    </item>
+    
   </channel>
 </rss>

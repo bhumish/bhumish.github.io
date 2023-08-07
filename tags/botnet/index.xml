@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>botnet on Bhumish&#39;s Blog :tada:</title>
+    <link>https://bhumish.github.io/tags/botnet/</link>
+    <description>Recent content in botnet on Bhumish&#39;s Blog :tada:</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>&amp;copy; 2023 Bhumish Gajjar</copyright>
+    <lastBuildDate>Mon, 30 Sep 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/botnet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A free gift with the dynamic IP</title>
+      <link>https://bhumish.github.io/post/dynamic-ip/</link>
+      <pubDate>Mon, 30 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/dynamic-ip/</guid>
+      <description>I used to have dynamic IP assigned by the ISP - and I faced a problem which was like a gift bundled with my IP address.</description>
+    </item>
+    
+  </channel>
+</rss>
