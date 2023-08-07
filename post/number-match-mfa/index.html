@@ -110,7 +110,7 @@
     "keywords": ["phishing","mfa"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "520"
+    "wordCount": "521"
   }]
   </script>
 
@@ -323,11 +323,11 @@
     <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
       
       <div class="min-w-0 min-h-0 max-w-prose grow">
-        <p><em>This post is mainly for users who use MFA authenticator apps on their smartphones. Earlier the process was to click either Yes (Approve) or No (Deny) and that would allow to login. Why is now one more step required to enter a value shown on the login page.</em></p>
+        <p><em>This post is mainly for users who use MFA authenticator apps on their smartphones. Earlier the process was to click either Yes (Approve) or No (Deny) and that would allow to login. Why is now one more step required to enter a value shown on the login page?</em></p>
 <h2 id="background" class="relative group">Background <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#background" aria-label="Anchor">#</a></span></h2>
 <p>We have been using passwords since years to secure our digital accounts. Since people need to have passwords for several different services and it becomes tough to remember them, they started to either (a) reuse the same password, (b) use an easy password, (c) write down the different passwords.</p>
 <p>It became easy for attackers/hackers/fraudsters to either guess these passwords or brute-force them (try millions of possible passwords), or maybe scan through your personal diary to check the password, or glance through your screen while you are typing. Hence the concept of 2FA was introduced, where you provide one more layer of identity (prove that you are the real owner of this account).</p>
-<p>The most common technique for 2FA is an OTP send over to the user via SMS (phone carrier&rsquo;s network). Attackers started abusing these functionality and there were many researches to prove that this option is not safe. Big companies came up with the authenticator applications (Authy, Google Authenticator, Microsoft Authenticator, PingID) which would send you a push notification to either approve or deny the authentication requests.</p>
+<p>The most common technique for 2FA is an OTP sent over to the user via SMS (phone carrier&rsquo;s network). Attackers started abusing these functionality and there were many researches to prove that this option is not safe. Big companies came up with the authenticator applications (Authy, Google Authenticator, Microsoft Authenticator, PingID) which would send you a push notification to either approve or deny the authentication requests.</p>
 <p>Attackers were able to bypass this by using a technique called &lsquo;<a
   href="https://www.theregister.com/2022/11/03/mfa_fatigue_enterprise_threat/"
   
@@ -336,12 +336,12 @@
   href="https://portswigger.net/daily-swig/mfa-fatigue-attacks-users-tricked-into-allowing-device-access-due-to-overload-of-push-notifications"
   
   target="_blank" rel="noreferrer noopener"
->MFA Bombing</a>&rsquo;. In case they get hold of your password, they would still need to have an &lsquo;Approve&rsquo; from your authenticator app, which you are not going to provide easily. They would bombard you with hundreds of such push-notifications (or maybe voice calls or other social-engineering techniques), hoping that you would click on &lsquo;Approve&rsquo; at least once &ndash; and that would open the door to your account. Last year a networking giant company was breached by the same method.</p>
+>MFA Bombing</a>&rsquo;. In case they get hold of your password, they would still need to have an <em>Approval</em> sent from your authenticator app, which you are not going to provide easily. They would bombard you with hundreds of such push-notifications (or maybe voice calls or other social-engineering techniques), hoping that you would click on &lsquo;Approve&rsquo; at least once &ndash; and that would open the door to your account. Last year a networking giant company was breached by the same method.</p>
 <blockquote>
 <p>What would you do if you received hundreds of such requests within a few minutes? Probably click Approve to get rid of that spam, thinking there is some glitch on the app&rsquo;s platform?</p>
 </blockquote>
 <h2 id="answer" class="relative group">Answer <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#answer" aria-label="Anchor">#</a></span></h2>
-<p>Security is always a cat and mouse game. Researchers came up with a simple technique to avoid MFA Fatigue - the user needs to enter the number shown on your screen to your authenticator app. When this is implemented, the number for each MFA request would be different, meaning when the attacker tries to send several requests and hopes that the user would approve, it would not happen. The attacker would need to match the exact number for that particular action, and the possibility is near to zero (in an ideal world).</p>
+<p>Security is always a cat and mouse game. Researchers came up with a simple technique to avoid MFA Fatigue - the user needs to enter the number shown on her screen into her authenticator app. When this is implemented, the number for each MFA request would be different, meaning when the attacker tries to send several requests and hopes that the user would approve, it would not happen. The attacker would need to match the exact number for that particular action, and the possibility is near to zero (in an ideal world).</p>
 <p>
 
 
@@ -424,7 +424,7 @@
           width="96"
           height="96"
           alt="Bhumish Gajjar"
-          src="/img/author_hu026534b9bf09a70d25e16607879320d8_306924_192x192_fill_q75_box_center.jpg"
+          src="/img/author_hu02e7525e7086a19c15a31028373d3111_768251_192x192_fill_q75_box_center.jpg"
           
             loading="lazy"
           
@@ -569,7 +569,7 @@
       
       
         <p class="text-sm text-neutral-500 dark:text-neutral-400">
-            © 2022 Bhumish Gajjar
+            © 2023 Bhumish Gajjar
         </p>
       
       

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OWASP on Bhumish&#39;s Blog :tada:</title>
+    <link>https://bhumish.github.io/tags/owasp/</link>
+    <description>Recent content in OWASP on Bhumish&#39;s Blog :tada:</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>&amp;copy; 2023 Bhumish Gajjar</copyright>
+    <lastBuildDate>Tue, 25 Feb 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/owasp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL Truncation Vulnerability</title>
+      <link>https://bhumish.github.io/post/sql-truncation/</link>
+      <pubDate>Tue, 25 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/sql-truncation/</guid>
+      <description>A brief explainer on the SQL Truncation Vulnerability</description>
+    </item>
+    
+    <item>
+      <title>SQL Truncation Vulnerability</title>
+      <link>https://bhumish.github.io/post/ssl-tls-browser/</link>
+      <pubDate>Tue, 25 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/ssl-tls-browser/</guid>
+      <description>A brief explainer on the SQL Truncation Vulnerability</description>
+    </item>
+    
+  </channel>
+</rss>

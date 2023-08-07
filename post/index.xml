@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Bhumish&#39;s Blog :tada:</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
-    <copyright>&amp;copy; 2022 Bhumish Gajjar</copyright>
+    <copyright>&amp;copy; 2023 Bhumish Gajjar</copyright>
     <lastBuildDate>Sun, 02 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MFA - Why do we match numbers to approve MFA sign-in?</title>
@@ -60,6 +60,60 @@
       
       <guid>https://bhumish.github.io/post/bypass-root-detection-android/</guid>
       <description>A trick on how to bypass the root-detection mechanism applied by any Android APK</description>
+    </item>
+    
+    <item>
+      <title>Instagram - Your posts are not really private</title>
+      <link>https://bhumish.github.io/post/instagram-idor/</link>
+      <pubDate>Thu, 25 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/instagram-idor/</guid>
+      <description>Instagram has a forceful-browsing vulnerability where someone else can view your posts by knowing the URL.</description>
+    </item>
+    
+    <item>
+      <title>Remote Logging with Rsyslog</title>
+      <link>https://bhumish.github.io/post/rsyslog-starter/</link>
+      <pubDate>Sun, 04 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/rsyslog-starter/</guid>
+      <description>A quick tutorial on working with Rsyslog - the log processing utility.</description>
+    </item>
+    
+    <item>
+      <title>SQL Truncation Vulnerability</title>
+      <link>https://bhumish.github.io/post/sql-truncation/</link>
+      <pubDate>Tue, 25 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/sql-truncation/</guid>
+      <description>A brief explainer on the SQL Truncation Vulnerability</description>
+    </item>
+    
+    <item>
+      <title>SQL Truncation Vulnerability</title>
+      <link>https://bhumish.github.io/post/ssl-tls-browser/</link>
+      <pubDate>Tue, 25 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/ssl-tls-browser/</guid>
+      <description>A brief explainer on the SQL Truncation Vulnerability</description>
+    </item>
+    
+    <item>
+      <title>Evading mod_evasive on Apache</title>
+      <link>https://bhumish.github.io/post/apache-mod-evasive/</link>
+      <pubDate>Mon, 23 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/apache-mod-evasive/</guid>
+      <description>Bypassing the security mechanism of mod_evasive module (defense against DoS attacks) in Apache web server</description>
+    </item>
+    
+    <item>
+      <title>Truecaller for BSNL Landline Phones</title>
+      <link>https://bhumish.github.io/post/bsnl-bill/</link>
+      <pubDate>Fri, 13 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/bsnl-bill/</guid>
+      <description>Bill Payment portal for BSNL landlines is exposing the phone-owner&amp;rsquo;s details without any verification. These quick lines explain how.</description>
     </item>
     
   </channel>
