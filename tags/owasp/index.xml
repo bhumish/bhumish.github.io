@@ -17,14 +17,5 @@
       <description>A brief explainer on the SQL Truncation Vulnerability</description>
     </item>
     
-    <item>
-      <title>SQL Truncation Vulnerability</title>
-      <link>https://bhumish.github.io/post/ssl-tls-browser/</link>
-      <pubDate>Tue, 25 Feb 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://bhumish.github.io/post/ssl-tls-browser/</guid>
-      <description>A brief explainer on the SQL Truncation Vulnerability</description>
-    </item>
-    
   </channel>
 </rss>

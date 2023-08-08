@@ -81,20 +81,20 @@
     </item>
     
     <item>
+      <title>SSL-TLS and Your Browser</title>
+      <link>https://bhumish.github.io/post/ssl-tls-browser/</link>
+      <pubDate>Fri, 29 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/ssl-tls-browser/</guid>
+      <description>A detailed explainer on how HTTPS works using SSL and TLS protocols</description>
+    </item>
+    
+    <item>
       <title>SQL Truncation Vulnerability</title>
       <link>https://bhumish.github.io/post/sql-truncation/</link>
       <pubDate>Tue, 25 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>https://bhumish.github.io/post/sql-truncation/</guid>
-      <description>A brief explainer on the SQL Truncation Vulnerability</description>
-    </item>
-    
-    <item>
-      <title>SQL Truncation Vulnerability</title>
-      <link>https://bhumish.github.io/post/ssl-tls-browser/</link>
-      <pubDate>Tue, 25 Feb 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://bhumish.github.io/post/ssl-tls-browser/</guid>
       <description>A brief explainer on the SQL Truncation Vulnerability</description>
     </item>
     
