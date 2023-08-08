@@ -17,5 +17,14 @@
       <description>I used to have dynamic IP assigned by the ISP - and I faced a problem which was like a gift bundled with my IP address.</description>
     </item>
     
+    <item>
+      <title>Brute-Force Attack on Wordpress</title>
+      <link>https://bhumish.github.io/post/wordpress-brute-force/</link>
+      <pubDate>Sat, 13 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/wordpress-brute-force/</guid>
+      <description>Details about a recent attack on Wordpress installations</description>
+    </item>
+    
   </channel>
 </rss>

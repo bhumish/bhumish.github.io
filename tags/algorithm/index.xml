@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algorithm on Bhumish&#39;s Blog :tada:</title>
+    <link>https://bhumish.github.io/tags/algorithm/</link>
+    <description>Recent content in algorithm on Bhumish&#39;s Blog :tada:</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>&amp;copy; 2023 Bhumish Gajjar</copyright>
+    <lastBuildDate>Tue, 20 Nov 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorhyme – Dr. Radia Perlman</title>
+      <link>https://bhumish.github.io/post/algorhyme/</link>
+      <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/algorhyme/</guid>
+      <description>Really loved this piece of rhyme</description>
+    </item>
+    
+    <item>
+      <title>High Performance Computing - HPC Workshop</title>
+      <link>https://bhumish.github.io/post/hpc-workshop/</link>
+      <pubDate>Sat, 29 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/hpc-workshop/</guid>
+      <description>Quick summary of the HPC workshop arranged by CDAC</description>
+    </item>
+    
+  </channel>
+</rss>

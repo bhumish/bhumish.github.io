@@ -206,5 +206,185 @@
       <description>Announcement on my new Python based interactive course - Rock Paper Scissors</description>
     </item>
     
+    <item>
+      <title>Snort on Debian</title>
+      <link>https://bhumish.github.io/post/snort-on-debian/</link>
+      <pubDate>Mon, 29 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/snort-on-debian/</guid>
+      <description>Configuring Snort IDS on a Debian system</description>
+    </item>
+    
+    <item>
+      <title>CloudU Certified!</title>
+      <link>https://bhumish.github.io/post/cloudu-certified/</link>
+      <pubDate>Mon, 03 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/cloudu-certified/</guid>
+      <description>Sharing my little achievement</description>
+    </item>
+    
+    <item>
+      <title>Brute-Force Attack on Wordpress</title>
+      <link>https://bhumish.github.io/post/wordpress-brute-force/</link>
+      <pubDate>Sat, 13 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/wordpress-brute-force/</guid>
+      <description>Details about a recent attack on Wordpress installations</description>
+    </item>
+    
+    <item>
+      <title>A weird Google-search bug</title>
+      <link>https://bhumish.github.io/post/google-search-bug/</link>
+      <pubDate>Wed, 13 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/google-search-bug/</guid>
+      <description>A weird search query on Google leading to porn websites?</description>
+    </item>
+    
+    <item>
+      <title>A Quick Recap</title>
+      <link>https://bhumish.github.io/post/quick-recap/</link>
+      <pubDate>Fri, 04 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/quick-recap/</guid>
+      <description>Was away from the blog. What was I doing?</description>
+    </item>
+    
+    <item>
+      <title>Why is it necessary to keep your email secure?</title>
+      <link>https://bhumish.github.io/post/email-secure/</link>
+      <pubDate>Fri, 14 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/email-secure/</guid>
+      <description>You need to keep your email as the most secure item, after your finances</description>
+    </item>
+    
+    <item>
+      <title>Algorhyme – Dr. Radia Perlman</title>
+      <link>https://bhumish.github.io/post/algorhyme/</link>
+      <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/algorhyme/</guid>
+      <description>Really loved this piece of rhyme</description>
+    </item>
+    
+    <item>
+      <title>High Performance Computing - HPC Workshop</title>
+      <link>https://bhumish.github.io/post/hpc-workshop/</link>
+      <pubDate>Sat, 29 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/hpc-workshop/</guid>
+      <description>Quick summary of the HPC workshop arranged by CDAC</description>
+    </item>
+    
+    <item>
+      <title>Life, at Gandhinagar</title>
+      <link>https://bhumish.github.io/post/life-gandhinagar/</link>
+      <pubDate>Sat, 11 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/life-gandhinagar/</guid>
+      <description>Moved away from home, for pursuing my Masters in Network Security</description>
+    </item>
+    
+    <item>
+      <title>Windows Server 2012</title>
+      <link>https://bhumish.github.io/post/win-2012/</link>
+      <pubDate>Sun, 08 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/win-2012/</guid>
+      <description>My review of the soon-to-be launched Windows Server 2012</description>
+    </item>
+    
+    <item>
+      <title>Switched Multimegabit Data Service</title>
+      <link>https://bhumish.github.io/post/smds/</link>
+      <pubDate>Sun, 06 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/smds/</guid>
+      <description>A quick explainer of the SMDS technology</description>
+    </item>
+    
+    <item>
+      <title>Passed CompTIA Network&#43;</title>
+      <link>https://bhumish.github.io/post/network-plus/</link>
+      <pubDate>Sun, 29 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/network-plus/</guid>
+      <description>Good news - I cleared the N+ exams!</description>
+    </item>
+    
+    <item>
+      <title>Wireless Network Development</title>
+      <link>https://bhumish.github.io/post/wireless-network/</link>
+      <pubDate>Wed, 22 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/wireless-network/</guid>
+      <description>An update on my ongoing college project</description>
+    </item>
+    
+    <item>
+      <title>Project Work - Phase II - Update</title>
+      <link>https://bhumish.github.io/post/project2-ii/</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/project2-ii/</guid>
+      <description>An update on my ongoing college project</description>
+    </item>
+    
+    <item>
+      <title>Project Work - Phase II</title>
+      <link>https://bhumish.github.io/post/project2-i/</link>
+      <pubDate>Sun, 05 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/project2-i/</guid>
+      <description>An update on my ongoing college project</description>
+    </item>
+    
+    <item>
+      <title>3 WAN Protocols you should know: HDLC, PPP, and Frame-Relay</title>
+      <link>https://bhumish.github.io/post/wan-protocols/</link>
+      <pubDate>Thu, 02 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/wan-protocols/</guid>
+      <description>A quick explainer on the WAN protocols</description>
+    </item>
+    
+    <item>
+      <title>Android App Inventor Hosting Project</title>
+      <link>https://bhumish.github.io/post/app-inventor/</link>
+      <pubDate>Thu, 26 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/app-inventor/</guid>
+      <description>Story of how I hosted the Android&amp;rsquo;s AppInventor project on a Google AppEngine</description>
+    </item>
+    
+    <item>
+      <title>Completion of Project – Phase I</title>
+      <link>https://bhumish.github.io/post/phase-i-complete/</link>
+      <pubDate>Mon, 26 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/phase-i-complete/</guid>
+      <description>An update on my ongoing college project</description>
+    </item>
+    
+    <item>
+      <title>College Project – Phase I</title>
+      <link>https://bhumish.github.io/post/phase-i/</link>
+      <pubDate>Sun, 18 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/phase-i/</guid>
+      <description>An update on my ongoing college project</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://bhumish.github.io/post/first-post/</link>
+      <pubDate>Tue, 30 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/first-post/</guid>
+      <description>Hello World!</description>
+    </item>
+    
   </channel>
 </rss>

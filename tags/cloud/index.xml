@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cloud on Bhumish&#39;s Blog :tada:</title>
+    <link>https://bhumish.github.io/tags/cloud/</link>
+    <description>Recent content in cloud on Bhumish&#39;s Blog :tada:</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>&amp;copy; 2023 Bhumish Gajjar</copyright>
+    <lastBuildDate>Mon, 03 Jun 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CloudU Certified!</title>
+      <link>https://bhumish.github.io/post/cloudu-certified/</link>
+      <pubDate>Mon, 03 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/cloudu-certified/</guid>
+      <description>Sharing my little achievement</description>
+    </item>
+    
+  </channel>
+</rss>

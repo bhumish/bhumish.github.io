@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>brute-force on Bhumish&#39;s Blog :tada:</title>
+    <link>https://bhumish.github.io/tags/brute-force/</link>
+    <description>Recent content in brute-force on Bhumish&#39;s Blog :tada:</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>&amp;copy; 2023 Bhumish Gajjar</copyright>
+    <lastBuildDate>Sat, 13 Apr 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/brute-force/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Brute-Force Attack on Wordpress</title>
+      <link>https://bhumish.github.io/post/wordpress-brute-force/</link>
+      <pubDate>Sat, 13 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/wordpress-brute-force/</guid>
+      <description>Details about a recent attack on Wordpress installations</description>
+    </item>
+    
+  </channel>
+</rss>

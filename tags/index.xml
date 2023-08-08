@@ -279,7 +279,7 @@
     </item>
     
     <item>
-      <title>Wordpress</title>
+      <title>wordpress</title>
       <link>https://bhumish.github.io/tags/wordpress/</link>
       <pubDate>Sat, 19 Oct 2013 00:00:00 +0000</pubDate>
       
@@ -329,6 +329,150 @@
       <pubDate>Sat, 31 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://bhumish.github.io/tags/device/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>debian</title>
+      <link>https://bhumish.github.io/tags/debian/</link>
+      <pubDate>Mon, 29 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/debian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IDS</title>
+      <link>https://bhumish.github.io/tags/ids/</link>
+      <pubDate>Mon, 29 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/ids/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>snort</title>
+      <link>https://bhumish.github.io/tags/snort/</link>
+      <pubDate>Mon, 29 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/snort/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>certification</title>
+      <link>https://bhumish.github.io/tags/certification/</link>
+      <pubDate>Mon, 03 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/certification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloud</title>
+      <link>https://bhumish.github.io/tags/cloud/</link>
+      <pubDate>Mon, 03 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/cloud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>brute-force</title>
+      <link>https://bhumish.github.io/tags/brute-force/</link>
+      <pubDate>Sat, 13 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/brute-force/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bug</title>
+      <link>https://bhumish.github.io/tags/bug/</link>
+      <pubDate>Wed, 13 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/bug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google</title>
+      <link>https://bhumish.github.io/tags/google/</link>
+      <pubDate>Wed, 13 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>personal</title>
+      <link>https://bhumish.github.io/tags/personal/</link>
+      <pubDate>Fri, 04 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recap</title>
+      <link>https://bhumish.github.io/tags/recap/</link>
+      <pubDate>Fri, 04 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/recap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>email</title>
+      <link>https://bhumish.github.io/tags/email/</link>
+      <pubDate>Fri, 14 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/email/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hack</title>
+      <link>https://bhumish.github.io/tags/hack/</link>
+      <pubDate>Fri, 14 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/hack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>algorithm</title>
+      <link>https://bhumish.github.io/tags/algorithm/</link>
+      <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>life</title>
+      <link>https://bhumish.github.io/tags/life/</link>
+      <pubDate>Sat, 11 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
+      <link>https://bhumish.github.io/tags/windows/</link>
+      <pubDate>Sun, 08 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>network</title>
+      <link>https://bhumish.github.io/tags/network/</link>
+      <pubDate>Sun, 06 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/network/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>network on Bhumish&#39;s Blog :tada:</title>
+    <link>https://bhumish.github.io/tags/network/</link>
+    <description>Recent content in network on Bhumish&#39;s Blog :tada:</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>&amp;copy; 2023 Bhumish Gajjar</copyright>
+    <lastBuildDate>Sun, 06 May 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Switched Multimegabit Data Service</title>
+      <link>https://bhumish.github.io/post/smds/</link>
+      <pubDate>Sun, 06 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/smds/</guid>
+      <description>A quick explainer of the SMDS technology</description>
+    </item>
+    
+    <item>
+      <title>Passed CompTIA Network&#43;</title>
+      <link>https://bhumish.github.io/post/network-plus/</link>
+      <pubDate>Sun, 29 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/network-plus/</guid>
+      <description>Good news - I cleared the N+ exams!</description>
+    </item>
+    
+    <item>
+      <title>Wireless Network Development</title>
+      <link>https://bhumish.github.io/post/wireless-network/</link>
+      <pubDate>Wed, 22 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/wireless-network/</guid>
+      <description>An update on my ongoing college project</description>
+    </item>
+    
+    <item>
+      <title>Project Work - Phase II - Update</title>
+      <link>https://bhumish.github.io/post/project2-ii/</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/project2-ii/</guid>
+      <description>An update on my ongoing college project</description>
+    </item>
+    
+    <item>
+      <title>Project Work - Phase II</title>
+      <link>https://bhumish.github.io/post/project2-i/</link>
+      <pubDate>Sun, 05 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/project2-i/</guid>
+      <description>An update on my ongoing college project</description>
+    </item>
+    
+    <item>
+      <title>3 WAN Protocols you should know: HDLC, PPP, and Frame-Relay</title>
+      <link>https://bhumish.github.io/post/wan-protocols/</link>
+      <pubDate>Thu, 02 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/wan-protocols/</guid>
+      <description>A quick explainer on the WAN protocols</description>
+    </item>
+    
+    <item>
+      <title>Completion of Project – Phase I</title>
+      <link>https://bhumish.github.io/post/phase-i-complete/</link>
+      <pubDate>Mon, 26 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/phase-i-complete/</guid>
+      <description>An update on my ongoing college project</description>
+    </item>
+    
+    <item>
+      <title>College Project – Phase I</title>
+      <link>https://bhumish.github.io/post/phase-i/</link>
+      <pubDate>Sun, 18 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/phase-i/</guid>
+      <description>An update on my ongoing college project</description>
+    </item>
+    
+  </channel>
+</rss>

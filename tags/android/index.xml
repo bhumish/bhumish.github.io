@@ -17,5 +17,14 @@
       <description>A trick on how to bypass the root-detection mechanism applied by any Android APK</description>
     </item>
     
+    <item>
+      <title>Android App Inventor Hosting Project</title>
+      <link>https://bhumish.github.io/post/app-inventor/</link>
+      <pubDate>Thu, 26 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/app-inventor/</guid>
+      <description>Story of how I hosted the Android&amp;rsquo;s AppInventor project on a Google AppEngine</description>
+    </item>
+    
   </channel>
 </rss>
