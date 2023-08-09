@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>forensics on Bhumish&#39;s Blog :tada:</title>
+    <link>https://bhumish.github.io/tags/forensics/</link>
+    <description>Recent content in forensics on Bhumish&#39;s Blog :tada:</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>&amp;copy; 2023 Bhumish Gajjar</copyright>
+    <lastBuildDate>Tue, 26 Feb 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/forensics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating a Data Recovery Agent</title>
+      <link>https://bhumish.github.io/post/data-recovery-agent/</link>
+      <pubDate>Tue, 26 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/data-recovery-agent/</guid>
+      <description>Data Recovery Agent is used in Enterprise Windows environment for using PKI to achieve Data Integrity and Confidentiality. This article explains on how to create one.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -45,6 +45,24 @@
     </item>
     
     <item>
+      <title>Set-up Penetration Testing server on AWS</title>
+      <link>https://bhumish.github.io/post/aws-pentest-server/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/aws-pentest-server/</guid>
+      <description>Story of how I hosted the Android&amp;rsquo;s AppInventor project on a Google AppEngine</description>
+    </item>
+    
+    <item>
+      <title>Your Eureka Forbes account can easily be hacked!</title>
+      <link>https://bhumish.github.io/post/eureka-forbes/</link>
+      <pubDate>Sat, 11 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/eureka-forbes/</guid>
+      <description>The website of Eureka Forbes has a security issue, which they are not ready to touch.</description>
+    </item>
+    
+    <item>
       <title>Bugs — Easy To Find, Tough To Report</title>
       <link>https://bhumish.github.io/post/bugs-easy-to-find/</link>
       <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
@@ -54,12 +72,84 @@
     </item>
     
     <item>
+      <title>Never Post A Picture Of Your Boarding Pass On Social Media</title>
+      <link>https://bhumish.github.io/post/boarding-pass/</link>
+      <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/boarding-pass/</guid>
+      <description>Posting your boarding pass on social media may seem like a cool thing to do, but here are a ton of reasons why you shouldn&amp;rsquo;t.</description>
+    </item>
+    
+    <item>
+      <title>Fraud Android App in the name of Jio Prime</title>
+      <link>https://bhumish.github.io/post/fake-jio-prime-app/</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/fake-jio-prime-app/</guid>
+      <description>An Instagram page advertised about offering free Jio data if we install the Jio Prime app from their link. I did a static analysis of that application.</description>
+    </item>
+    
+    <item>
+      <title>A Trip to Bhuigaon Beach</title>
+      <link>https://bhumish.github.io/post/bhuigaon-beach/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/bhuigaon-beach/</guid>
+      <description>I visited a beach in Vasai - Bhuigaon, and this post describes my trip with some photos</description>
+    </item>
+    
+    <item>
+      <title>Login Bypass Vulnerability on a famous Indian Restaurant chain</title>
+      <link>https://bhumish.github.io/post/restaurant-login-bypass/</link>
+      <pubDate>Thu, 30 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/restaurant-login-bypass/</guid>
+      <description>I came across a login bypass vulnerability in a very famous food-chain&amp;rsquo;s Indian website</description>
+    </item>
+    
+    <item>
+      <title>Cycling trip to Padle Village - Part II</title>
+      <link>https://bhumish.github.io/post/cycling-padle-village-ii/</link>
+      <pubDate>Wed, 25 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/cycling-padle-village-ii/</guid>
+      <description>Second part of my visit to a nearby village on my MTB. This post has some photos of my trip.</description>
+    </item>
+    
+    <item>
+      <title>Cycling trip to Padle Village</title>
+      <link>https://bhumish.github.io/post/cycling-padle-village/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/cycling-padle-village/</guid>
+      <description>I visited a nearby village on my MTB. This post has some photos of my trip.</description>
+    </item>
+    
+    <item>
       <title>Bypass Root detection in Android - by modifying the APK</title>
       <link>https://bhumish.github.io/post/bypass-root-detection-android/</link>
       <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://bhumish.github.io/post/bypass-root-detection-android/</guid>
       <description>A trick on how to bypass the root-detection mechanism applied by any Android APK</description>
+    </item>
+    
+    <item>
+      <title>Bypass Root detection in Android [by modifying the APK]</title>
+      <link>https://bhumish.github.io/post/android-root-detect/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/android-root-detect/</guid>
+      <description>When an Android application is having root-detection mechanism, sometimes it can be bypassed by modifying the APK</description>
+    </item>
+    
+    <item>
+      <title>UTI ITSL – Data Disclosure through a single key</title>
+      <link>https://bhumish.github.io/post/pan-card-disclosure/</link>
+      <pubDate>Sat, 18 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/pan-card-disclosure/</guid>
+      <description>Some PAN card (Indian govt card for tax purposes) details are getting leaked from the UTI website</description>
     </item>
     
     <item>
@@ -234,6 +324,33 @@
     </item>
     
     <item>
+      <title>Creating a Data Recovery Agent</title>
+      <link>https://bhumish.github.io/post/data-recovery-agent/</link>
+      <pubDate>Tue, 26 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/data-recovery-agent/</guid>
+      <description>Data Recovery Agent is used in Enterprise Windows environment for using PKI to achieve Data Integrity and Confidentiality. This article explains on how to create one.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Trojan (Malware)</title>
+      <link>https://bhumish.github.io/post/malware-trojan/</link>
+      <pubDate>Mon, 18 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/malware-trojan/</guid>
+      <description>Creating a simple trojan to install in the victim system and connect back to our own machine</description>
+    </item>
+    
+    <item>
+      <title>Configuring Apache with a SSL Connection</title>
+      <link>https://bhumish.github.io/post/apache-ssl-connection/</link>
+      <pubDate>Sun, 17 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/apache-ssl-connection/</guid>
+      <description>This article helps you create an Apache website with SSL certificate</description>
+    </item>
+    
+    <item>
       <title>A weird Google-search bug</title>
       <link>https://bhumish.github.io/post/google-search-bug/</link>
       <pubDate>Wed, 13 Feb 2013 00:00:00 +0000</pubDate>
@@ -276,6 +393,24 @@
       
       <guid>https://bhumish.github.io/post/hpc-workshop/</guid>
       <description>Quick summary of the HPC workshop arranged by CDAC</description>
+    </item>
+    
+    <item>
+      <title>Setting up Password-less SSH Connections</title>
+      <link>https://bhumish.github.io/post/pw-less-ssh/</link>
+      <pubDate>Sun, 09 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/pw-less-ssh/</guid>
+      <description>Short article explaining how to setup the Password-less SSH between two hosts</description>
+    </item>
+    
+    <item>
+      <title>Common Network Security Threats</title>
+      <link>https://bhumish.github.io/post/common-nw-sec-threats/</link>
+      <pubDate>Wed, 05 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/common-nw-sec-threats/</guid>
+      <description>The most common threats faced by network devices today</description>
     </item>
     
     <item>

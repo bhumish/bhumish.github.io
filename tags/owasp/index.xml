@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OWASP on Bhumish&#39;s Blog :tada:</title>
+    <title>owasp on Bhumish&#39;s Blog :tada:</title>
     <link>https://bhumish.github.io/tags/owasp/</link>
-    <description>Recent content in OWASP on Bhumish&#39;s Blog :tada:</description>
+    <description>Recent content in owasp on Bhumish&#39;s Blog :tada:</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
     <copyright>&amp;copy; 2023 Bhumish Gajjar</copyright>
-    <lastBuildDate>Tue, 25 Feb 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/owasp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Mar 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/owasp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UTI ITSL – Data Disclosure through a single key</title>
+      <link>https://bhumish.github.io/post/pan-card-disclosure/</link>
+      <pubDate>Sat, 18 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/pan-card-disclosure/</guid>
+      <description>Some PAN card (Indian govt card for tax purposes) details are getting leaked from the UTI website</description>
+    </item>
+    
     <item>
       <title>SQL Truncation Vulnerability</title>
       <link>https://bhumish.github.io/post/sql-truncation/</link>

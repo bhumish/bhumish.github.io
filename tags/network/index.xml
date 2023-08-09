@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
     <copyright>&amp;copy; 2023 Bhumish Gajjar</copyright>
-    <lastBuildDate>Sun, 06 May 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Sep 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://bhumish.github.io/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up Password-less SSH Connections</title>
+      <link>https://bhumish.github.io/post/pw-less-ssh/</link>
+      <pubDate>Sun, 09 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/pw-less-ssh/</guid>
+      <description>Short article explaining how to setup the Password-less SSH between two hosts</description>
+    </item>
+    
+    <item>
+      <title>Common Network Security Threats</title>
+      <link>https://bhumish.github.io/post/common-nw-sec-threats/</link>
+      <pubDate>Wed, 05 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/common-nw-sec-threats/</guid>
+      <description>The most common threats faced by network devices today</description>
+    </item>
+    
     <item>
       <title>Switched Multimegabit Data Service</title>
       <link>https://bhumish.github.io/post/smds/</link>

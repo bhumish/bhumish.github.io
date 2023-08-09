@@ -17,5 +17,14 @@
       <description>Bypassing the security mechanism of mod_evasive module (defense against DoS attacks) in Apache web server</description>
     </item>
     
+    <item>
+      <title>Configuring Apache with a SSL Connection</title>
+      <link>https://bhumish.github.io/post/apache-ssl-connection/</link>
+      <pubDate>Sun, 17 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/post/apache-ssl-connection/</guid>
+      <description>This article helps you create an Apache website with SSL certificate</description>
+    </item>
+    
   </channel>
 </rss>

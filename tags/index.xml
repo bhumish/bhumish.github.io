@@ -81,6 +81,24 @@
     </item>
     
     <item>
+      <title>android</title>
+      <link>https://bhumish.github.io/tags/android/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>personal</title>
+      <link>https://bhumish.github.io/tags/personal/</link>
+      <pubDate>Wed, 01 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>bug bounty</title>
       <link>https://bhumish.github.io/tags/bug-bounty/</link>
       <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
@@ -90,11 +108,47 @@
     </item>
     
     <item>
-      <title>android</title>
-      <link>https://bhumish.github.io/tags/android/</link>
+      <title>Data Exposure</title>
+      <link>https://bhumish.github.io/tags/data-exposure/</link>
+      <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/data-exposure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>travel</title>
+      <link>https://bhumish.github.io/tags/travel/</link>
+      <pubDate>Fri, 21 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/travel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cycling</title>
+      <link>https://bhumish.github.io/tags/cycling/</link>
+      <pubDate>Wed, 25 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/cycling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>apk</title>
+      <link>https://bhumish.github.io/tags/apk/</link>
       <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://bhumish.github.io/tags/android/</guid>
+      <guid>https://bhumish.github.io/tags/apk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>root</title>
+      <link>https://bhumish.github.io/tags/root/</link>
+      <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/root/</guid>
       <description></description>
     </item>
     
@@ -104,6 +158,15 @@
       <pubDate>Sat, 16 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://bhumish.github.io/tags/root-bypass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>owasp</title>
+      <link>https://bhumish.github.io/tags/owasp/</link>
+      <pubDate>Sat, 18 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/owasp/</guid>
       <description></description>
     </item>
     
@@ -189,15 +252,6 @@
     </item>
     
     <item>
-      <title>OWASP</title>
-      <link>https://bhumish.github.io/tags/owasp/</link>
-      <pubDate>Tue, 25 Feb 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://bhumish.github.io/tags/owasp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SQL Injection</title>
       <link>https://bhumish.github.io/tags/sql-injection/</link>
       <pubDate>Tue, 25 Feb 2014 00:00:00 +0000</pubDate>
@@ -239,15 +293,6 @@
       <pubDate>Mon, 23 Dec 2013 00:00:00 +0000</pubDate>
       
       <guid>https://bhumish.github.io/tags/web-security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Exposure</title>
-      <link>https://bhumish.github.io/tags/data-exposure/</link>
-      <pubDate>Fri, 13 Dec 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://bhumish.github.io/tags/data-exposure/</guid>
       <description></description>
     </item>
     
@@ -414,6 +459,24 @@
     </item>
     
     <item>
+      <title>forensics</title>
+      <link>https://bhumish.github.io/tags/forensics/</link>
+      <pubDate>Tue, 26 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/forensics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>malware</title>
+      <link>https://bhumish.github.io/tags/malware/</link>
+      <pubDate>Mon, 18 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/malware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>bug</title>
       <link>https://bhumish.github.io/tags/bug/</link>
       <pubDate>Wed, 13 Feb 2013 00:00:00 +0000</pubDate>
@@ -428,15 +491,6 @@
       <pubDate>Wed, 13 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>https://bhumish.github.io/tags/google/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>personal</title>
-      <link>https://bhumish.github.io/tags/personal/</link>
-      <pubDate>Fri, 04 Jan 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://bhumish.github.io/tags/personal/</guid>
       <description></description>
     </item>
     
@@ -477,6 +531,15 @@
     </item>
     
     <item>
+      <title>network</title>
+      <link>https://bhumish.github.io/tags/network/</link>
+      <pubDate>Sun, 09 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://bhumish.github.io/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>life</title>
       <link>https://bhumish.github.io/tags/life/</link>
       <pubDate>Sat, 11 Aug 2012 00:00:00 +0000</pubDate>
@@ -491,15 +554,6 @@
       <pubDate>Sun, 08 Jul 2012 00:00:00 +0000</pubDate>
       
       <guid>https://bhumish.github.io/tags/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>network</title>
-      <link>https://bhumish.github.io/tags/network/</link>
-      <pubDate>Sun, 06 May 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://bhumish.github.io/tags/network/</guid>
       <description></description>
     </item>
     
