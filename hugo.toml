@@ -23,9 +23,9 @@ email = "bhumish@live.com"
 
 # Optional settings
 dateFormat = "2006-Jan-02"
-showWordCount = true
+showWordCount = false
 showReadingTime = true
-ShowShareButtons = true
+ShowShareButtons = false
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
 disableScrollToTop = false
@@ -41,7 +41,7 @@ favicon32x32 = "/favicon-32x32.png"
 apple_touch_icon = "/apple-touch-icon.png"
 
 [params.label]
-text = "Bhumish's Blog 🎉"
+text = "Bhumish's Blog 🎉🌎"
 icon = "/apple-touch-icon.png"
 iconHeight = 35
 
