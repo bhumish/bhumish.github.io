@@ -77,9 +77,12 @@ name = "x"
 url = "https://x.com/bhumish"
 
 [[params.socialIcons]]
+name = "wordpress"
+url = "https://bhumishgajjar.wordpress.com/"
+
+[[params.socialIcons]]
 name = "instagram"
 url = "https://bhumish.github.io/posts/i-am-not-on-instagram"
-
 
 [params.cover]
 hidden = true # hide everywhere but not in structured data
