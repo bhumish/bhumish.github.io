@@ -1,1 +1,0 @@
-# bhumish.github.io
