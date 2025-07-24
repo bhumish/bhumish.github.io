@@ -9,8 +9,8 @@ disableXML = true
 minifyOutput = true
 
 [params]
-headTitle = "Bhumish's Blog 🌎"
-title = "Bhumish's Blog 🌎"
+headTitle = "🌎 Bhumish's Blog"
+title = "🌎 Bhumish's Blog"
 description = "My journal where I write mostly about Information Security, and sometimes I try to fit in a few personal achievements and travel stories."
 defaultTheme = "light"
 disableThemeToggle = false
