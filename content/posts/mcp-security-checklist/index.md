@@ -1,7 +1,7 @@
 ---
-title: "MCP Security Review Checklist"
+title: "DRAFT - MCP Security Review Checklist"
 date: 2026-03-05
-draft: true
+draft: false
 tags: ["mcp", "AI", "security", "checklist"]
 categories: ["MCP", "AI"]
 description: "A structured guide for reviewing the MCP implementation within your environment."
