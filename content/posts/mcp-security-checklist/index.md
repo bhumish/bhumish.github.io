@@ -43,7 +43,7 @@ Each arrow above shows trust boundary, as they are separate assets. Each boundar
 
 MCP's auth spec uses OAuth 2.1, the stricter successor to OAuth 2.0.
 
--[ ] **Server uses Authorization Code + PKCE flow for user delegated access.** PKCE prevents someone from intercepting the authorization code in transit and exchanging it for a token. It would be like the key-card is handed to you in a sealed envelope.
+- [ ] **Server uses Authorization Code + PKCE flow for user delegated access.** PKCE prevents someone from intercepting the authorization code in transit and exchanging it for a token. It would be like the key-card is handed to you in a sealed envelope.
 
 If the MCP server is using Client Credentials flow (service account) for all users, that's not correct. This can be risky because all actions happen under one shared identity, so the system cannot clearly tell which user actually performed an action. If that single credential is leaked or misused, it may grant broad access to many users’ data instead of just one person’s data.
 
@@ -52,7 +52,7 @@ If the MCP server is using Client Credentials flow (service account) for all use
 This is like 'this key-card only works for that specific hotel building'. An access token issued for one Jira MCP server should only work for that Jira MCP server, not at the direct Jira API and not at any other MCP server within your environment.
 
 - [ ] **Server validates the `aud` (audience) claim on every token.** If the `aud` validation is not happening, that means a token issued for any service in the environment could be replayed against the MCP server.
-+ [ ] **Token passthrough to the downstream APIs should be absent.** The server must not take whatever token the MCP client sends and directly forward it to the Jira or Confluence API. It should use its own service credentials tor exchange the token properly. Token passthrough should not happen.
+- [ ] **Token passthrough to the downstream APIs should be absent.** The server must not take whatever token the MCP client sends and directly forward it to the Jira or Confluence API. It should use its own service credentials tor exchange the token properly. Token passthrough should not happen.
 
 #### Confused Deputy Problem
 
@@ -61,8 +61,23 @@ This issue exists in enterprise MCP depoyments when the MCP server acts as a pro
     1. Alice logs in to the Confluence MCP server normally. Server redirects her to Atlassian's OAuth login. She approves. Atlassian sets a consent cookie in her browser saying 'this MCP server is trusted'.
     2. An attacker sends Alice a crafted link like: `https://alice-mcp-server.com/oauth/start?client_id=evil-client&redirect_uri=https://attacker.com/steal`. Alice clicks it and her browser still has the Atlassian consent from step 1. Atlassian skips the consent screen. The authorization code gets redirected to `attacker.com`. The attacker now has Alice's Confluence access, without Alice entering her password.
 
-[ ] **Per-client, per-user consent records exist server-side.** The server must maintain its own record of "Client X has been approved by User Y." This is separate from Atlassian's consent cookie. Before forwarding any auth request to Atlassian, the server should its own records first.
+- [ ] **Per-client, per-user consent records exist server-side.** The server must maintain its own record of "Client X has been approved by User Y." This is separate from Atlassian's consent cookie. Before forwarding any auth request to Atlassian, the server should its own records first.
+- [ ] **OAuth `state` parameter is set only after consent is explicitly approved.** The state cookie/session tracking the OAuth flow must be created only after the user has clicked "Approve" on the consent screen — not before. Setting it earlier would allow the attack described above.
+- [ ] **Redirect URI validation should use exact string matching, no wildcards.** `https://app.mycompany.com/callback` is valid. `https://*.mycompany.com/callback` is not, because wildcards let an attacker register `https://anything-evil.mycompany.com/callback` as a valid redirect.
+- [ ] **Consent cookies should use `__Host-` prefix, `Secure`, `HttpOnly`, `SameSite=Lax`.** The `Host` prefix forces the cookie to be set only from the main site (not subdomains) and only over HTTPS. `SameSite=Lax` ensures that cookie is not sent on most cross-site requests.
 
-**OAuth `state` parameter is set only after consent is explicitly approved.** The state cookie/session tracking the OAuth flow must be created only after the user has clicked "Approve" on the consent screen — not before. Setting it earlier would allow the attack described above.
+#### Scope Enforcement
 
+Scopes are the list of permissions that a token carries. In MCP world, there are many implementations that request broad scopes at startup and never check them again at runtime.
+
+- [ ] **Server should request minimal scopes at initialization.** A Confluence MCP server that only needs read access should not request write or admin scopes upfront. If such scope is required, request should be made incrementally at the moment the tool needs that.
+- [ ] **Scope should be checked per tool at runtime, not just at token issuance.** A token with `read:confluence` should be rejected when it tries to call a `create_page` tool, even if the token itself is valid and alive.
+- [ ] **No wildcard or ombinus scopes (`*`, `all`, `full-access`) should be used.** Wildcard scopes defeat the purpose of scoping.
+
+#### Session Security
+
+- [ ] **Session IDs should be cryptographically random**
+- [ ] **Sessions should be bound to user identity, not just the session token.** Store session data as `user_id:session_id`. This means that even if an attacker obtains a valid session ID, it's worthless without the corresponding user token.
+- [ ] **Sessions should expire and rotate appropriately.** Define a maximum session lifetime as per the requirement. Rotate the session IDs after any privilege elevation events.
+- [ ] **Sessions should not be used as authentication, every request re-validates the token.** A session ID is a lookup key, not a credential. The session provides context, while the token proves identity.
 
