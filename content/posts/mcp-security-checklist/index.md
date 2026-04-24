@@ -13,23 +13,15 @@ While MCP unlocks powerful capabilities like file access, web browsing, database
 This article breaks down the checklist into five layers:
 ___
 
-1: Protocol - How the server implements MCP itself
+1. Protocol - How the server implements MCP itself
 
-___
+2. Auth - Authentication and authorization
 
-2: Auth - Authentication and authorization
+3. Data Flow - What moves where, prompt injection
 
-___
+4. Runtime - System privileges, logging, transit
 
-3: Data Flow - What moves where, prompt injection
-
-___
-
-4: Runtime - System privileges, logging, transit
-
-___
-
-5: Dynamic Testing - Actually breaking it
+5. Dynamic Testing - Actually breaking it
 
 ___
 
@@ -60,4 +52,17 @@ If the MCP server is using Client Credentials flow (service account) for all use
 This is like 'this key-card only works for that specific hotel building'. An access token issued for one Jira MCP server should only work for that Jira MCP server, not at the direct Jira API and not at any other MCP server within your environment.
 
 - **Server validates the `aud` (audience) claim on every token.** If the `aud` validation is not happening, that means a token issued for any service in the environment could be replayed against the MCP server.
-- **Token passthrough to the downstream APIs is absent.** The server must not take whatever token the MCP client sends and directly forward it to the Jira or Confluence API. It should use its own service credentials tor exchange the token properly. Token passthrough should not happen.
+- **Token passthrough to the downstream APIs should be absent.** The server must not take whatever token the MCP client sends and directly forward it to the Jira or Confluence API. It should use its own service credentials tor exchange the token properly. Token passthrough should not happen.
+
+#### Confused Deputy Problem
+
+This issue exists in enterprise MCP depoyments when the MCP server acts as a proxy, sitting between the AI and a third party service. How the attack works?
+
+```
+1. Alice logs in to the Confluence MCP server normally. Server redirects her to Atlassian's OAuth login. She approves. Atlassian sets a consent cookie in her browser saying 'this MCP server is trusted'.
+2. An attacker sends Alice a crafted link like: `https://alice-mcp-server.com/oauth/start?client_id=evil-client&redirect_uri=https://attacker.com/steal`. Alice clicks it and her browser still has the Atlassian consent from step 1. Atlassian skips the consent screen. The authorization code gets redirected to `attacker.com`. The attacker now has Alice's Confluence access, without Alice entering her password.
+```
+
+- [ ] **Per-client, per-user consent records exist server-side.** The server must maintain its own record of "Client X has been approved by User Y." This is separate from Atlassian's consent cookie. Before forwarding any auth request to Atlassian, the server should its own records first.
+
+
