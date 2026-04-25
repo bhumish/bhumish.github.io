@@ -10,24 +10,11 @@ The Model Context Protocol (MCP) is an open standard developed by Anthropic that
 
 While MCP unlocks powerful capabilities like file access, web browsing, database queries - it also introduces a new attack surface that developers and security teams need to consider seriously. Since MCP servers can execute actions on behalf of an AI model, a misconfigured or compromised server could lead to risks like data leaks, unauthorized access or prompt injection attacks.
 
-This article breaks down the checklist into five layers:
-___
-
-1. Protocol - How the server implements MCP itself
-
-2. Auth - Authentication and authorization
-
-3. Data Flow - What moves where, prompt injection
-
-4. Runtime - System privileges, logging, transit
-
-5. Dynamic Testing - Actually breaking the setup
+This article has the checklist in 4 different layers.
 
 ___
 
-### Layer 1 - Protocol
-
-### Layer 2 - Authentication and Authorization
+### Layer 1 - Authentication and Authorization
 
 Authentication is, *who are you?* - proving identity. Authorization is, *are you allowed to do this?* - checking the permissions.
 
@@ -81,7 +68,7 @@ Scopes are the list of permissions that a token carries. In MCP world, there are
 - **Sessions should expire and rotate appropriately.** Define a maximum session lifetime as per the requirement. Rotate the session IDs after any privilege elevation events.
 - **Sessions should not be used as authentication, every request re-validates the token.** A session ID is a lookup key, not a credential. The session provides context, while the token proves identity.
 
-### Layer 3 - Data Flow and Prompt Injection
+### Layer 2 - Data Flow and Prompt Injection
 
 This is the layer which separates MCP security from the traditional API security. The data retrieved by server from tools like Jira or Confluence doesn't go to a user's UI, but goes to the AI Model's context window, which influences the model's behaviour.
 
@@ -112,7 +99,7 @@ Wherever some malicious text is embedded into content, whether a Jira ticket or 
 - **Server should enforce Confluence/Jira space and project permissions per-user.** If User A does not have access to the "Vulnerability Management - Open Issues" Confluence space, the MCP server should not return content from that space even if User A crafts a tool call that requests it.
 - **Server should not run as a super-privileged service account that bypasses user permissions.** This is something very common and very dangerous. A Jira MCP server that authenticates to Jira as a service account with admin rights means every user effectively has admin access through the AI, regardless of their own permissions.
 
-### Layer 4 - Runtime and Operational Posture
+### Layer 3 - Runtime and Operational Posture
 
 When a MCP server runs with excessive system privileges, unrestricted network access or without proper logging and monitoring, it becomes equally dangerous.
 
@@ -140,3 +127,12 @@ When a MCP server runs with excessive system privileges, unrestricted network ac
 - **Server should return 403 for requests with invalid origin headers.** This is a requirement from MCP 2025-11-25 spec. A server that accepts requests from any origin is vulnerable to cross-origin attacks.
 - **The `MCP-Protocol-Version` header should be validated on all HTTP requests.** Clients must be sneding this header as per spec. Any server that don't validate this may process requests from outdated clients.
 - **Credentials should be loaded from environment variables if using stdio transport.** Do not hardcode credentials in config files that might end up in version control.
+
+### Layer 4 - Dynamic Testing
+
+#### Prompt Injectin Testing
+
+ - **Try adversarial instructions with a Confluence page or Jira ticket.** Check for multiple testing payloads like instructions to reveal the system prompt.
+ - **Test the injection via all content returning fields.** Check for content within page titles, labels, comments, custom fields, space descriptions, username, etc. All these items come as tool outputs.
+
+#### Input Fuzzing
