@@ -136,3 +136,34 @@ When a MCP server runs with excessive system privileges, unrestricted network ac
  - **Test the injection via all content returning fields.** Check for content within page titles, labels, comments, custom fields, space descriptions, username, etc. All these items come as tool outputs.
 
 #### Input Fuzzing
+
+Send malformed inputs that violate the declared schema. Wrong types, boundary violations (max length + 1, negative integers), missing required fields, extra unexpected fields. Document whether the server returns clean errors or crashes.
+ Test path traversal in resource URI parameters. If a tool accepts a page ID or file path, try: ../../../etc/passwd, %2e%2e%2f, absolute paths. Resource URIs passed to filesystem operations are especially vulnerable.
+ Test for SSRF in URL parameters. If any tool accepts a URL, try pointing it at internal services: http://169.254.169.254/metadata (AWS metadata endpoint), http://localhost:8080/admin, internal database ports. SSRF via MCP tools is a real and underexplored attack vector.
+
+- **Send malformed inputs that violate the declared schema.** Examples would be wrong types, boundary violations (greater than max length, negative integers), missing fields, additional fields. See if the server returns any errors, do the errors contain extra information, or the server directly crashes.
+- **Test for path traversal in resource URI parameters.** If the tool accepts a page ID or file path, try variants of traversal attempts like `../../etc/passwd`, absolute paths.
+- **Test for SSRF in URL parameters.** If any tools accepts an URL, try pointing that to internal services like the AWS metadata endpoint, or other points like `https://localhost:8080/admin`, internal DB ports.
+
+#### Auth Testing
+
+Replay a token after session expiry — verify it is rejected.
+ Present a token issued for a different service — verify it is rejected (audience check). If you have access to another service's token in the same OAuth infrastructure, try presenting it to the MCP server. It should return 401.
+ Attempt to access resources belonging to User B while authenticated as User A. Use User A's session to request a Confluence page that only User B has access to. The server should reject it based on underlying Atlassian permissions.
+ Use a token with narrow scopes to call a tool requiring broader scopes. Get a token with only read:confluence. Try to call create_page. The server should deny it — even if the token is otherwise valid and unexpired.
+
+- **Replay a token after session expiry - verify that it is rejected.**
+- **Present a token which is issued for a different service - and verify that it gets rejected.**
+- **Attempt to access resources belonging to one user while authenticated as another user.**
+- **Use a token with narrow scopes and use that to call a tool requiring broader scopes.** Get a token with only `read:confluence`. Now call `create_page`. The server should ideally deny it.
+
+#### Logging and Verification
+
+- **Trigger authentication related functions and see everything gets logged.** Example, multiple failed logins and successful logins.
+- **Check the logs do not contain any sensitive information.**
+
+___
+
+This servers as a checklist to get started on a security review of any MCP implementation. MCP being a new technology, the spec keeps evolving and the threat landscape moves fast along with it.
+
+~ Eti ~
