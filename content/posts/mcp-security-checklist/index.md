@@ -1,5 +1,5 @@
 ---
-title: "DRAFT - MCP Security Review Checklist"
+title: "MCP Security Review Checklist"
 date: 2026-03-05
 draft: false
 tags: ["mcp", "AI", "security", "checklist"]
