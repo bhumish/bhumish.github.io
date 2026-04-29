@@ -143,11 +143,6 @@ When a MCP server runs with excessive system privileges, unrestricted network ac
 
 ### Auth Testing
 
-Replay a token after session expiry — verify it is rejected.
- Present a token issued for a different service — verify it is rejected (audience check). If you have access to another service's token in the same OAuth infrastructure, try presenting it to the MCP server. It should return 401.
- Attempt to access resources belonging to User B while authenticated as User A. Use User A's session to request a Confluence page that only User B has access to. The server should reject it based on underlying Atlassian permissions.
- Use a token with narrow scopes to call a tool requiring broader scopes. Get a token with only read:confluence. Try to call create_page. The server should deny it — even if the token is otherwise valid and unexpired.
-
 - **Replay a token after session expiry - verify that it is rejected.**
 - **Present a token which is issued for a different service - and verify that it gets rejected.**
 - **Attempt to access resources belonging to one user while authenticated as another user.**
